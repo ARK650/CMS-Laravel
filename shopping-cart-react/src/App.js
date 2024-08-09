@@ -7,7 +7,7 @@ import { Cart } from "./pages/cart/cart";
 import { Login } from "./pages/login/login";
 import { About } from "./pages/about/about";
 import { ShopContextProvider } from "./context/shop-context";
-import CheckoutPage from "./components/CheckoutPage";
+import { CheckoutPage } from "./components/CheckoutPage";
 
 function App() {
   return (

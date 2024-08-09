@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./CheckoutPage.css";
 
-const CheckoutPage = () => {
+export const CheckoutPage = () => {
   const [billingDetails, setBillingDetails] = useState({
     name: "",
     email: "",
