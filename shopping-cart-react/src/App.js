@@ -8,6 +8,7 @@ import { Login } from "./pages/login/login";
 import { About } from "./pages/about/about";
 import { ShopContextProvider } from "./context/shop-context";
 import { CheckoutPage } from "./components/CheckoutPage";
+import { ProductDetail } from "./pages/shop/ProductDetail"; // Import the ProductDetail component
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Shop />} />
+            <Route path="/product/:id" element={<ProductDetail />} />{" "}
+            {/* Add this route */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/about" element={<About />} />
